@@ -43,8 +43,8 @@ export default function PostCard({ post, defaultShowComments = false }) {
 
   const handleShare = async () => {
     const shareUrl = `${window.location.origin}/posts/${post.id}`;
-    const shareTitle = `Post by ${post.guest?.nickname || 'Anonymous'} | Antigravity Social`;
-    const shareText = post.content ? post.content.substring(0, 100) : 'Check out this post on Antigravity Social!';
+    const shareTitle = `Post by ${post.guest?.nickname || 'Anonymous'} | PrinceTufu Social`;
+    const shareText = post.content ? post.content.substring(0, 100) : 'Check out this post on PrinceTufu Social!';
 
     if (navigator.share) {
       try {

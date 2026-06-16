@@ -23,7 +23,7 @@ export default function AdminLayout() {
               <Shield size={18} />
             </div>
             <span className="font-extrabold text-slate-800 dark:text-slate-100 text-sm">
-              Antigravity <span className="text-purple-600 dark:text-purple-400">Admin</span>
+              PrinceTufu <span className="text-purple-600 dark:text-purple-400">Admin</span>
             </span>
           </div>
 

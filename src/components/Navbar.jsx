@@ -3,6 +3,7 @@ import { Zap, LogOut } from 'lucide-react';
 import { Link, NavLink } from 'react-router-dom';
 import useAuthStore from '../store/useAuthStore';
 import ThemeToggle from './ThemeToggle';
+import vibeLogo from '../assets/image/vibechat.png';
 
 export default function Navbar() {
   const { guest, logout } = useAuthStore();
@@ -11,8 +12,8 @@ export default function Navbar() {
     <nav className="glass border-b border-white/20 px-4 sm:px-6 py-3 rounded-2xl mb-5 flex justify-between items-center shadow-sm">
       {/* Brand */}
       <Link to="/" className="flex items-center gap-2.5 group">
-        <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-indigo-500 via-violet-500 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/30 group-hover:shadow-indigo-500/50 transition-shadow">
-          <Zap size={15} className="fill-white text-white" />
+        <div className="w-8 h-8 rounded-xl flex items-center justify-center transition-shadow">
+          <img src={vibeLogo} alt="logo" className="w-6 h-6 rounded-lg object-cover bg-slate-200" />
         </div>
         <div className="flex flex-col leading-none">
           <span className="font-black text-slate-900 dark:text-white text-sm tracking-tight">
